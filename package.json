@@ -5,9 +5,13 @@
   "author": "Eddy Cedeño <miguepoke28@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "format": "prettier \"src/**/*.{js,  html}\" --write"
+    "format": "prettier \"src/**/*.{js,  html}\" --write",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
   },
   "devDependencies": {
+    "eslint": "^7.23.0",
+    "eslint-config-prettier": "^8.1.0",
+    "parcel-bundler": "^1.12.5",
     "prettier": "^2.2.1"
   }
 }
