@@ -1,0 +1,13 @@
+{
+  "name": "react_simple",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Eddy Cedeño <miguepoke28@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "format": "prettier \"src/**/*.{js,  html}\" --write"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  }
+}
