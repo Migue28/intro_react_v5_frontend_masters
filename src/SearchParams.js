@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import pet, { ANIMALS } from "@frontendmasters/pet";
 import useDropdown from "./useDropdown";
+import Results from "./Results";
 
 const SearchParams = () => {
   const [location, setLocation] = useState("Seattle, WA");
@@ -15,6 +16,9 @@ const SearchParams = () => {
       breed,
       type: animal,
     });
+
+    console.log("animals", animals);
+
     setPets(animals || []);
   }
 
@@ -51,6 +55,7 @@ const SearchParams = () => {
         <BreedDropdown />
         <button>Submit</button>
       </form>
+      <Results pets={pets} />
     </div>
   );
 };
