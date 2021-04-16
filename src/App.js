@@ -2,24 +2,22 @@ import React from "react";
 import { render } from "react-dom";
 // import Pet from "./Pet";
 import SearchParams from "./SearchParams";
-import {Router, Link} from '@reach/router';
+import { Router, Link } from "@reach/router";
 import Details from "./Details";
 
 const App = () => {
-  return(
+  return (
     <div>
       <header>
-      <Link to='/'>
-        Adopt me!
-      </Link>
+        <Link to="/">Adopt me!</Link>
       </header>
-      
+
       <Router>
-        <SearchParams path='/'/>
-        <Details path='/details/:id'/>
+        <SearchParams path="/" />
+        <Details path="/details/:id" />
       </Router>
     </div>
-  )
+  );
 };
 
 render(<App />, document.getElementById("root"));
