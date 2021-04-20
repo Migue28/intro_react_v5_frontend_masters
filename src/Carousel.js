@@ -30,9 +30,11 @@ class Carousel extends React.Component {
         <img src={photos[active]} alt="animal" />
         <div className="carousel-smaller">
           {photos.map((photo, index) => (
+            // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
             <img
               key={photo}
               onClick={this.handleIndexClick}
+              onKeyDown={this.handleIndexClick}
               data-index={index}
               src={photo}
               classNames={index === active ? "active" : ""}
